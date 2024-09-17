@@ -1,0 +1,18 @@
+project_name/
+├── android/
+├── ios/
+├── lib/
+│   ├── main.dart
+│   ├── models/
+│   │   └── student_model.dart
+│   └── ... other files
+├── pubspec.yaml
+└── .gitignore
+
+lib/
+├── api/
+│   └── api_service.dart       # API service for handling requests
+├── components/
+│   ├── student_dashboard_components.dart
+├── student_dashboard_screen.dart     # Main student dashboard widget
+└── student_list.dart          # Student list widget
