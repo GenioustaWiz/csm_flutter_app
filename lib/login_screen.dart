@@ -90,8 +90,19 @@ class LoginScreenState extends State<LoginScreen> {
           }
         }
 
+        // Extract user_type from response
+        final String userType = jsonResponse['user_type'];
+
+        // Navigate to the respective page based on user_type
         if (mounted) {
-          Navigator.pushReplacementNamed(context, '/student-list');
+          if (userType == 'parent') {
+            Navigator.pushReplacementNamed(context, '/parent-page');
+          } else if (userType == 'teacher') {
+            Navigator.pushReplacementNamed(context, '/teacher-page');
+          } else {
+            // Default redirect, e.g., admin or other roles
+            Navigator.pushReplacementNamed(context, '/student-list');
+          }
         }
       } else {
         final errorMessage = jsonDecode(response.body)['detail'] ?? 'Unknown error occurred';
