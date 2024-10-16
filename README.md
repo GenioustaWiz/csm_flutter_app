@@ -1,4 +1,4 @@
-#Centralized School Management System (CSM) Flutter App
+**Centralized School Management System (CSM) Flutter App**
 
 ##Overview
 The CSM Flutter App serves as the mobile frontend for the Centralized School Management System, providing a seamless experience for parents to log in, view their child's performance, and receive real-time notifications about attendance, academic updates, and important school events.
