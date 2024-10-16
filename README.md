@@ -26,5 +26,7 @@ Student list for the logged in parent: /api/student-list/?page=$currentPage&page
 Student Dashboard: /api/student-dashboard/$studentId/
 
 **Requirements**
+
 Flutter SDK
+
 API Access to the Django backend
