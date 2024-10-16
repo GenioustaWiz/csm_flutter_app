@@ -1,16 +1,28 @@
-# csm_flutter_app
+#Centralized School Management System (CSM) Flutter App
 
-A new Flutter project.
+##Overview
+The CSM Flutter App serves as the mobile frontend for the Centralized School Management System, providing a seamless experience for parents to log in, view their child's performance, and receive real-time notifications about attendance, academic updates, and important school events.
 
-## Getting Started
+##Key Features
+Parent Login: Secure login for parents to access personalized dashboards.
+Child Performance Dashboard: View academic performance, attendance, and extracurricular activities in real-time.
+Notifications: Receive instant notifications on important updates (attendance, performance, and school announcements).
 
-This project is a starting point for a Flutter application.
+##Backend Integration
+This app connects to a Django backend via API, which manages user authentication, student data, and notification services. For more details on the backend, check out the [CSM Django Backend](https://github.com/GenioustaWiz/centralized_school_management).
 
-A few resources to get you started if this is your first Flutter project:
+##Installation
+Clone the repository.
+Install dependencies: **flutter pub get**.
+Run the app: **flutter run**.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+##API Endpoints
+The app communicates with the backend using the following API endpoints:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Login: /api/login/
+Student list for the logged in parent: /api/student-list/?page=$currentPage&page_size=$pageSize
+Student Dashboard: /api/student-dashboard/$studentId/
+
+##Requirements
+Flutter SDK
+API Access to the Django backend
